@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public class UnpairedNamesFilter {
     public static String filter(List<String> list){
-        return list.stream().sorted(Comparator)
+        return list.stream()
                 .filter(s -> list.indexOf(s)%2!=0)
                 .map(s->list.indexOf(s) + ". "+s)
                 .collect(Collectors.joining("\n"));

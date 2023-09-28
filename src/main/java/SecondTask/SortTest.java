@@ -1,14 +1,11 @@
-package org.example;
+package SecondTask;
 
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.stream.Stream;
+import java.util.List;
 
-public class Main {
+public class SortTest {
     public static void main(String[] args) {
-
-
-        ArrayList<String> s = new ArrayList<>();
+        List<String> s =new ArrayList<>();
         s.add("Ivan");
         s.add( "Maria");
         s.add( "Misha");
@@ -20,8 +17,7 @@ public class Main {
         s.add( "Andrii");
         s.add("Oleg");
         s.add( "ANTON");
-
-        System.out.println("Hello world!");
+        System.out.println(SortList.sort(s));
     }
 
 }
